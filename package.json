@@ -1,0 +1,49 @@
+{
+  "name": "webtttclient",
+  "version": "1.0.0",
+  "description": "A Tic Tac Toe client that runs in the web browser",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start",
+    "start": "webpack-dev-server --open --env dev",
+    "build": "webpack --env prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrfishball/WebTTTClient.git"
+  },
+  "author": "Steven Kwok",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrfishball/WebTTTClient/issues"
+  },
+  "homepage": "https://github.com/mrfishball/WebTTTClient#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "eslint": "^5.8.0",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jasmine-core": "^3.3.0",
+    "karma": "^3.1.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.2",
+    "karma-webpack": "^4.0.0-rc.2",
+    "webpack": "^4.25.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10",
+    "webpack-merge": "^4.1.4"
+  },
+  "dependencies": {
+    "babel-loader": "^8.0.4",
+    "css-loader": "^1.0.1",
+    "style-loader": "^0.23.1"
+  }
+}
