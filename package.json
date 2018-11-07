@@ -4,10 +4,12 @@
   "description": "A Tic Tac Toe client that runs in the web browser",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
     "test": "karma start",
-    "start": "webpack-dev-server --open --env dev",
+    "dev": "webpack-dev-server --open --env dev",
     "build": "webpack --env prod",
-    "travis": "npm run build && karma start --single-run"
+    "travis": "npm run build && karma start --single-run",
+    "postinstall": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -46,6 +48,7 @@
     "babel-loader": "^8.0.4",
     "css-loader": "^1.0.1",
     "es6-promise": "^4.2.5",
+    "express": "^4.16.4",
     "style-loader": "^0.23.1"
   }
 }
