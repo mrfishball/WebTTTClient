@@ -8,13 +8,14 @@ module.exports = merge(common, {
 
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Development"
+      title: "Development",
+      template: "./src/public/index.html"
     }),
     new webpack.HotModuleReplacementPlugin(),
   ],
 
   watch: true,
-  devtool: 'inline-source-map',
+  devtool: 'eval-source-map',
     devServer: {
       contentBase: './dist',
       hot: true
