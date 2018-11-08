@@ -4,6 +4,7 @@ module.exports = function (config) {
     browsers: ['Chrome'],
 
     files: [
+      './refresh-debug.js',
       { pattern: 'src/**/*.js' },
       'test/all_tests.js'
     ],
@@ -30,7 +31,7 @@ module.exports = function (config) {
       }
     },
 
-    reporters: ['mocha'],
+    reporters: ['mocha', 'kjhtml'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
