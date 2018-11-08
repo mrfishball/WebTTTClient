@@ -16,8 +16,11 @@ You're going to need:
 
 ### Getting Set Up
 
-1. Fork this repository on GitHub.
-2. Clone *your forked repository* (not our original one) to your hard drive with `git clone https://github.com/YOURUSERNAME/WebTTTClient.git`
+1. Clone this repository.
+
+```shell
+git clone git@github.com:mrfishball/WebTTTClient.git
+```
 3. `cd WebTTTClient`
 4. Install project dependencies
 

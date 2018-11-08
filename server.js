@@ -1,14 +1,14 @@
-const express = require("express");
-const path = require("path");
-const port = process.env.PORT || 8080;
-const app = express();
+const express = require('express')
+const path = require('path')
+const port = process.env.PORT || 8080
+const app = express()
 
-app.use(express.static(__dirname + "/dist"));
+app.use(express.static(__dirname + '/dist'))
 
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "index.html"));
-});
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'index.html'))
+})
 
 console.log("Listen on 'localhost:8080...'")
-console.log("Ctrl + C to stop")
-app.listen(port);
+console.log('Ctrl + C to stop')
+app.listen(port)

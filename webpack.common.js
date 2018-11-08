@@ -1,6 +1,6 @@
-const path = require('path');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: {
@@ -13,9 +13,9 @@ module.exports = {
   },
 
   module: {
-    rules : [
+    rules: [
       {
-        enforce: "pre",
+        enforce: 'pre',
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'eslint-loader',
@@ -38,8 +38,8 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-       title: 'Tic-Tac-Toe',
-       template: "./src/public/index.html"
+      title: 'Tic-Tac-Toe',
+      template: './src/public/index.html'
     })
-  ],
-};
+  ]
+}
