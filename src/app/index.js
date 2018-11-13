@@ -1,4 +1,4 @@
-import { fetchBoard } from './fetchBoard'
+import { startGame } from './components/setup/startGame'
 import '../style/style.css'
 
-fetchBoard()
+startGame()
