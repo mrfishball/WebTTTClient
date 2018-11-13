@@ -1,10 +1,9 @@
 module.exports = function (config) {
   config.set({
     frameworks: ['jasmine'],
-    browsers: ['Chrome'],
+    browsers: ['ChromeHeadless'],
 
     files: [
-      './refresh-debug.js',
       { pattern: 'src/**/*.js' },
       'test/all_tests.js'
     ],
