@@ -1,5 +1,5 @@
 function buildUrl (partialUrl) {
-  const urlBase = 'http://localhost:3000/api/'
+  const urlBase = 'https://staging-ttt-rubyrails-api.herokuapp.com/api/'
   const apiVersion = 'v1'
 
   return urlBase + apiVersion + partialUrl
