@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/mrfishball/WebTTTClient.svg?branch=master)](https://travis-ci.com/mrfishball/WebTTTClient)
 
-A Tic Tac Toe client that runs in the web browser.
+A ❌ Tic-Tac-Toe ⭕ client that runs in the web browser.
 
 Development
 ------------------------------

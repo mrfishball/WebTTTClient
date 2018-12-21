@@ -1,8 +1,49 @@
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-th, td {
-    padding: 30px;
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e91e63;
+}
+
+.board{
+  width: 500px;
+  height: 500px;
+  display: grid;
+  background-color: #ed4b82;
+  grid-gap: 5px;
+  grid-template-columns: 33% 33% 33%;
+  grid-auto-rows: 33% 33% 33%;
+}
+
+.spot {
+  cursor: pointer;
+  background-color: #e91e63;
+  position: relative;
+}
+
+.spot::before{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  font-size: 8rem;
+
+}
+
+.spot.x::before{
+  content: "X";
+}
+
+.spot.o::before{
+  content: "O";
 }

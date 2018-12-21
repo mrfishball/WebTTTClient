@@ -8,7 +8,7 @@ module.exports = merge(common, {
 
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Development',
+      title: 'Tic-Tac-Toe Development',
       template: './src/public/index.html'
     }),
     new webpack.HotModuleReplacementPlugin()
