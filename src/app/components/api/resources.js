@@ -1,8 +1,8 @@
 function buildUrl (partialUrl) {
-  const urlBase = 'https://staging-ttt-rubyrails-api.herokuapp.com/api/'
+  const urlBaseProd = 'https://live-ttt-rubyrails-api.herokuapp.com/api/'
   const apiVersion = 'v1'
 
-  return urlBase + apiVersion + partialUrl
+  return urlBaseProd + apiVersion + partialUrl
 }
 
 export const resources = {
