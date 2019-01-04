@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.com/mrfishball/WebTTTClient.svg?branch=master)](https://travis-ci.com/mrfishball/WebTTTClient)
 
+Checkout the [live](https://live-ttt-web-client.herokuapp.com) version of the Web app.
+
 A Tic-Tac-Toe client that runs in the web browser.
 
 Development
